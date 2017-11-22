@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fungjai Game</title>
+	<link rel='stylesheet prefetch' href='css/foundation.css'>
+	<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+  <input type="password" name="check" id="check" onkeyup="ischar(this.value,this)" />
+</div>
+<div class="sent" id="myBtn">
+  <img src="yes.png" alt="">
+</div>
+<div class="sent" id="myBtn" style="display: none;">
+  <button onclick="check()" type="button" class="btnSend" id="sent"></button>
+</div>
+
+
+<div id="error" onclick="error_off()">
+
+  <h1>
+    <svg role="img">
+      <text class="word" dominant-baseline="central" fill="#222" stroke="#222" stroke-linecap="round" stroke-width="1.5%" text-anchor="middle" x="50%" y="50%">คุณตอบผิดนะครับ
+      </text>
+      <text class="word" dominant-baseline="central" fill="white" text-anchor="middle" x="50%" y="50%">คุณตอบผิดนะครับ</text>
+    </svg>
+  </h1>
+</div>
+
+<div id="success" onclick="off()">
+  <h1>
+    <svg role="img">
+      <text class="word" dominant-baseline="central" fill="#222" stroke="#222" stroke-linecap="round" stroke-width="1.5%" text-anchor="middle" x="50%" y="50%">ถูกต้องนะคร้าบบ!
+      </text>
+      <text class="word" dominant-baseline="central" fill="white" text-anchor="middle" x="50%" y="50%">ถูกต้องนะคร้าบบ!</text>
+    </svg>
+  </h1>
+  <p style="color: red; font-size: 16px;">***ทีมของคุณจะยังไม่ชนะจนกว่าจะหา Spy เจออ่ะ</p>
+</div>
+<button onclick="enableMute()" type="button" id="mute"></button>
+
+<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/index.js"></script>
+
+<script>
+  var config = {
+    apiKey: "AIzaSyClRADe1B2hQuTcMKPfwDmetFmB8zsK_bc",
+    authDomain: "fungjai-game.firebaseapp.com",
+    databaseURL: "https://fungjai-game.firebaseio.com",
+    projectId: "fungjai-game",
+    storageBucket: "fungjai-game.appspot.com",
+    messagingSenderId: "182118187571"
+  };
+  firebase.initializeApp(config);
+  
+  $(function() {
+      $("#check").focus();
+  });
+</script>
+</body>
+</html>

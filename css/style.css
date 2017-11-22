@@ -1,0 +1,222 @@
+@media screen and (max-width: 768px) {
+#check {
+    border: .5rem solid #130f0f;
+    width: 40rem;
+    height: 20rem;
+    color: #444;
+    padding: 2rem 1rem;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 320px){
+#check {
+    border: .5rem solid #130f0f;
+    width: 20rem;
+    height: 10rem;
+    color: #444;
+    padding: 2rem 1rem;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+}
+html, body, h1 {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: url(../dragon.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  color: #ccc;
+  position: relative;
+  display: flex;
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+  font-family: 'Pattaya', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sent {
+  /*position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  position:absolute; 
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  text-decoration:none;
+  font-size:1.5em;
+  z-index: 20; 
+  top: 50%;
+  left: 300px;
+  transition: all 0.25s ease-out;
+}
+
+#check {
+  border: .5rem solid #130f0f;
+  width: 20rem;
+  color: #444;
+  padding: 2rem 1rem;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#mute {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+}
+.btnSend {
+  background-color: rgba(0,0,0,.5); 
+}
+#error {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+}
+#success {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,255,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+}
+#text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: -1rem;
+  -webkit-animation: pop-out 2s ease-in-out infinite;
+          animation: pop-out 2s ease-in-out infinite;
+}
+
+.word {
+  font-family: 'Pattaya', sans-serif;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 0.5em;
+  font-size: 28px;
+}
+@media (min-width: 480px) {
+  .word {
+    font-size: 36px;
+  }
+}
+@media (min-width: 640px) {
+  .word {
+    font-size: 48px;
+  }
+}
+@media (min-width: 960px) {
+  .word {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1280px) {
+  .word {
+    font-size: 84px;
+  }
+}
+
+p {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #222222;
+}
+
+@-webkit-keyframes pop-out {
+  0% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+    opacity: 0;
+  }
+}
+
+
